@@ -7,24 +7,23 @@ This is my introductory university project: **mental health counseling chatbot**
 ## 1. Project Objective
 
 My primary goal of this project is to:
-- Provide **emotional support** through a conversational AI assistant.
-- Gain hands-on experience with:
+- Provide **emotional support** for students through an AI assistant.
+- Gain more experience with:
   - Transformer-based model fine-tuning
-  - Building web-based NLP applications
-
+  - Building website for NLP applications
 ---
 
 ## 2. Dataset
 
 - **Name**: `Amod/mental_health_counseling_conversations`
 - **Source**: [Hugging Face Datasets](https://huggingface.co/datasets/Amod/mental_health_counseling_conversations)
-- **Description**: Contains anonymized mental health counseling dialogues with "Context" (user input) and "Response" (counselor reply).
+- **Description**: Contains mental health counseling dialogues with "Context" (user input) and "Response" (counselor reply).
 
 ---
 
 ## 3. Model Architecture
 
-This project utilizes the `facebook/bart-base` model — a Transformer-based sequence-to-sequence model with an encoder-decoder architecture, suitable for text generation.
+This project uses `facebook/bart-base` model. (Bidirectional and Auto-Regressive Transformers)** combines the strengths of BERT (bidirectional encoder) and GPT (auto-regressive decoder).
 
 - **Pretrained** on large-scale text corpora via denoising autoencoding and language modeling objectives.
 - **Fine-tuned** on the `Amod/mental_health_counseling_conversations` dataset using Hugging Face's `Trainer`, with input as "Context" and target as "Response".
